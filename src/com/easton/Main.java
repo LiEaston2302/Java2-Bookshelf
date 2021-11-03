@@ -24,5 +24,23 @@ public class Main {
         for(int i = 0; i < bookshelf.size(); i++) {
             System.out.println(bookshelf.get(i));
         }
+
+        bookshelf.remove(b1);
+        bookshelf.remove(0);
+
+        System.out.println(
+        bookshelf.indexOf(b1) + "\n" +
+        bookshelf.indexOf(b2) + "\n" +
+        bookshelf.indexOf(b3) + "\n" +
+        bookshelf.indexOf(b4) + "\n"
+        );
+
+        bookshelf.set(1,b4);
+
+        bookshelf.forEach(System.out::println);
+        
+
+
+
     }
 }
