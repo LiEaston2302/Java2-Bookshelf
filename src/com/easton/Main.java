@@ -1,5 +1,8 @@
 package com.easton;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -11,5 +14,15 @@ public class Main {
         System.out.println("Hi");
 
         Book b4 = new ChildrensBook("Java for Kids", "Jacob", "Liam");
+
+        List<Book> bookshelf = new ArrayList<>();
+        bookshelf.add(b1);
+        bookshelf.add(b2);
+        bookshelf.add(b3);
+        bookshelf.add(0, b4);
+
+        for(int i = 0; i < bookshelf.size(); i++) {
+            System.out.println(bookshelf.get(i));
+        }
     }
 }
